@@ -1,0 +1,19 @@
+[Unit]
+Description=Fabcoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=ubuntu
+
+Type=forking
+PIDFile=/home/ubuntu/.fabcoinsc/testnet3/fabcoind.pid
+ExecStart= /usr/local/bin/fabcoind -server -listen -rpcuser=fabcoin -rpcpassword=fabcoin -addnode=54.238.139.252 -addnode=52.78.242.45 -daemon -testnet -txindex=1 -rest -rpcallowip=0.0.0.0/0  -blockmaxconflict=12 -logevents -rpcworkqueue=100
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=10s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
