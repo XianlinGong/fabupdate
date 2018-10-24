@@ -7,7 +7,7 @@ User=ubuntu
 
 Type=forking
 PIDFile=/home/ubuntu/.fabcoinsc/fabcoind.pid
-ExecStart= /usr/local/bin/fabcoind -server -listen -rpcuser=fabcoin -rpcpassword=fabcoin -daemon -rest -rpcallowip=0.0.0.0/0 -txindex=1 -logevents -rpcworkqueue=100
+ExecStart= /usr/local/bin/fabcoind -server -listen -rpcuser=fabcoin -rpcpassword=fabcoin -addnode=52.60.97.159 -addnode=52.78.242.45 -daemon -testnet -txindex=1 -rest -rpcallowip=0.0.0.0/0  -blockmaxconflict=12 -logevents -rpcworkqueue=100
 Restart=always
 PrivateTmp=true
 TimeoutStopSec=60s

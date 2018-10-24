@@ -1,5 +1,5 @@
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get -y update
+sudo apt-get -y upgrade
 
 sudo apt-get install -y build-essential libtool autotools-dev autoconf pkg-config libssl-dev
 sudo apt-get install -y libboost-all-dev

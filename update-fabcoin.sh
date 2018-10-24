@@ -16,7 +16,7 @@ cp ~/.fabcoin/wallet.dat  ~/.fabcoinsc
 cp ~/.fabcoin/testnet3/wallet.dat ~/.fabcoinsc/testnet3
 
 #please update fabcoin.service 
-sudo sh fabcoin.service.sh
+#sudo sh fabcoin.service.sh
 
 #clean 
 rm Fabcoin-v160203-ubuntu16.04.tar.gz
