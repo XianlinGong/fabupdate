@@ -21,3 +21,6 @@ sudo sh fabcoin.service.sh
 #clean 
 rm Fabcoin-v160203-ubuntu16.04.tar.gz
 rm -rf fabcoin
+
+
+cp fabcli*  ~/bin

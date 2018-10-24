@@ -1,0 +1,2 @@
+fabcoin-cli -rpcuser=fabcoin -rpcpassword=fabcoin ${@:1}
+
